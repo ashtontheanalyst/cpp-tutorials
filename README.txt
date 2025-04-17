@@ -16,3 +16,17 @@ Making a File and Running It:
    - g++ fileName.cpp
    - ./a.out
    - OUTPUT
+
+Added Function to ~/.bashrc file:
+   - Tired of going through all those steps so I added this function to the file
+
+mcpp() {
+  if [ -z "$1" ]; then
+    echo "Usage: mcpp <name>"
+    return 1
+  fi
+  cd ~/code/cpp/cpp-tutorials && mkdir "$1" && cd "$1" && touch "$1.cpp"
+}
+
+   - source ~/.bashrc
+   - Reopen terminal then the mcpp command is working
