@@ -2,6 +2,8 @@ Wanted to brush up on my C++ after learning some basic C
 Following this tutorial:
 https://www.youtube.com/watch?v=vLnPwxZdW4Y
 
+**** Currently at 1:24:12 minutes
+
 Development Setup:
    - Download and use VS Code (our IDE)
    - Make sure g++ is downloaded (our compiler)
