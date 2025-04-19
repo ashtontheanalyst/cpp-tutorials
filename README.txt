@@ -2,7 +2,7 @@ Wanted to brush up on my C++ after learning some basic C
 Following this tutorial:
 https://www.youtube.com/watch?v=vLnPwxZdW4Y
 
-**** Currently at 1:24:12 minutes
+**** Currently at 1:52:10 minutes, started the random package
 
 Development Setup:
    - Download and use VS Code (our IDE)
