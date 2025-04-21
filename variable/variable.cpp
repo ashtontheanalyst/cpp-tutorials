@@ -1,5 +1,11 @@
 #include <iostream>
 
+void favColor(std::string favoriteColor);
+
+// This is a global variable, it can be used anywhere in the file, any function
+// Try to avoid using global var.'s since they're not as secure and cause confusion in large programs
+std::string color = "dark red";
+
 int main() {
     int x; // var declaration
     x = 5; // var assignment
@@ -25,5 +31,14 @@ int main() {
 
     std::cout << CIRCUM << " cm\n";
 
+
+    // GLOBALS ----------------------------------------------------------------------------------------
+    std::cout << color << " is my favorite color\n";
+    favColor(color);
+
     return 0;
+}
+
+void favColor(std::string favoriteColor) {
+    std::cout << "Again, " << color << " is my favorite color!\n";
 }
