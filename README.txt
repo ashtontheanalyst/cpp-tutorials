@@ -2,7 +2,7 @@ Wanted to brush up on my C++ after learning some basic C
 Following this tutorial:
 https://www.youtube.com/watch?v=vLnPwxZdW4Y
 
-**** Currently at 2:34:09 minutes, watching bank application, going to replicate soon!
+**** Currently at 2:56:47 minutes, start of sizeof() operator
 
 Development Setup:
    - Download and use VS Code (our IDE)
