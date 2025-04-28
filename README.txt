@@ -2,7 +2,7 @@ Wanted to brush up on my C++ after learning some basic C
 Following this tutorial:
 https://www.youtube.com/watch?v=vLnPwxZdW4Y
 
-**** Currently at 2:56:47 minutes, start of sizeof() operator
+**** Currently at 3:20:49 minutes, starting the function on sorting an array
 
 Development Setup:
    - Download and use VS Code (our IDE)
