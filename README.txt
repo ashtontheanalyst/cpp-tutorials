@@ -2,7 +2,7 @@ Wanted to brush up on my C++ after learning some basic C
 Following this tutorial:
 https://www.youtube.com/watch?v=vLnPwxZdW4Y
 
-**** Currently at 3:20:49 minutes, starting the function on sorting an array
+**** Currently at 3:31:28 minutes, starting user filled array
 
 Development Setup:
    - Download and use VS Code (our IDE)
