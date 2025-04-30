@@ -20,7 +20,7 @@ int main() {
     sort(array, size);
 
 
-    // fill function -----------------------------------------------------------------------------
+    // fill function --------------------------------------------------------------------------------
     // Really great for filling in arrays or lists that have a ton of value you don't want to one by one put in
     const int SIZE = 12;
     std::string foods[SIZE]; // array allocated with 15 strings
@@ -34,6 +34,49 @@ int main() {
     for (std::string food : foods) {
         std::cout << food << " ";
     } std::cout << '\n';
+
+
+    // filling an array with user input -------------------------------------------------------------
+    std::string foods1[5]; // max size of this array is 5 strings
+    size = sizeof(foods1)/sizeof(foods1[0]); // redeclare size to new value
+    std::string temp; // holds the string temp
+
+    for (int i = 0; i < size; i++) {
+        std::cout << "Enter a food or press 'q' to quit, #" << i + 1 << "/5: "; 
+        std::getline(std::cin, temp);
+
+        if (temp == "q") {
+            break;
+        }
+        else {
+            foods1[i] = temp;
+        }
+    }
+
+    std::cout << "You like these foods:\n";
+
+    // This goes through the loop as long as the value in foods1 isn't empty
+    for (int j = 0; !foods1[j].empty(); j++) {
+        std::cout << foods1[j] << "\n";
+    } std::cout << '\n';
+
+
+    // 2D Array (multidimensional) ------------------------------------------------------------------
+    // [# of rows][# of columns], you only have to initialize the amount of columns at minimum
+    // The formatting can be different in terms of indenting but this looks nice
+    std::string cars[][3] = {{"Mustang", "Escape", "F150"},
+                            {"Camaro", "Equinox", "Silverado"},
+                            {"Hellcat", "Durango", "1500"}};
+
+    int rows = sizeof(cars)/sizeof(cars[0]);
+    int columns = sizeof(cars[0])/sizeof(cars[0][0]);
+
+    for (int i = 0; i < rows; i++) {
+        std::cout << "Row: " << i + 1 << '\n';
+        for (int j = 0; j < columns; j++) {
+            std::cout << cars[i][j] << " ";
+        } std::cout << '\n';
+    }
 
     return 0;
 }
