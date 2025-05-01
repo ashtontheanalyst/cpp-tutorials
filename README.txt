@@ -2,7 +2,7 @@ Wanted to brush up on my C++ after learning some basic C
 Following this tutorial:
 https://www.youtube.com/watch?v=vLnPwxZdW4Y
 
-**** Currently at 4:46:26 minutes, finished TIC TAC TOE!!
+**** Currently at 4:58:49 minutes, strating function templates
 
 Development Setup:
    - Download and use VS Code (our IDE)
