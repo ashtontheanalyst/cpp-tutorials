@@ -2,7 +2,7 @@ Wanted to brush up on my C++ after learning some basic C
 Following this tutorial:
 https://www.youtube.com/watch?v=vLnPwxZdW4Y
 
-**** Currently at 3:31:28 minutes, starting user filled array
+**** Currently at 4:22:43 minutes, finished the pointer intro
 
 Development Setup:
    - Download and use VS Code (our IDE)
