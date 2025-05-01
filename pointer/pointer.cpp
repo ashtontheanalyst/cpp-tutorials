@@ -22,7 +22,7 @@ int main() {
     int age = 20;
     int *pAge = &age; // pAge integer pointer to age
 
-    
+
     // Array pointer kinda ---------------------------------------------------------------------------
     std::string freePizzas[5] {"sausage", "pepperoni", "cheese", "BBQ", "sicilian"};
     std::cout << "Arrays are there own memory address to the first value: " << freePizzas << '\n';
@@ -30,6 +30,26 @@ int main() {
     std::string *pFreePizzas = freePizzas;
     std::cout << pFreePizzas << " is pFreePizzas value, the first mem address of freePizzas array\n";
     std::cout << "This is the deref value of pFreePizzas: '" << *pFreePizzas << "', notice it's the first array value\n";
+
+
+    // ----------------------------------------------------------------------------------------------
+    // Null value - a special value meaning that something has no value at all
+    // Null Pointer - a pointer that isn't pointing at anything. They can be helpful for seeing if an
+    // address was successfully assigned or not
+
+    int *pointer = nullptr; // good practice to assign a pointer nullptr if you don't have anything just yet
+    int x = 123;
+    pointer = &x; // now it's assigned
+
+    // IMPORTANT: Check to see if the pointer got assigned before you continue working
+    // it's unsafe to deref a pointer if it's null, can cause memory issues!!!
+    if (pointer == nullptr) {
+        std::cout << "Address did not get assigned\n";
+    }
+    else {
+        std::cout << "Address: " << pointer << " | Value at Address: " << *pointer << '\n';
+        // We deref in the else statement where we've confirmed its not null
+    }
 
     return 0;
 }
